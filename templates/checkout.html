@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Procesar Pago</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/checkout.css') }}">
+</head>
+<body>
+    <h1>Procesar Pago</h1>
+    
+    <form action="/checkout" method="POST">
+        <label for="card-holder-name">Nombre del titular de la tarjeta:</label>
+        <input type="text" id="card-holder-name" name="card-holder-name" required>
+        
+        <label for="card-number">Número de tarjeta:</label>
+        <input type="text" id="card-number" name="card-number" required>
+
+        <label for="card-expiration">Fecha de vencimiento:</label>
+        <input type="text" id="card-expiration" name="card-expiration" required>
+
+        <label for="card-cvc">CVC:</label>
+        <input type="text" id="card-cvc" name="card-cvc" required>
+
+        <button>Procesar Pago</button>
+    </form>
+</body>
+</html>

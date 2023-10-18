@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/profile.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Mi Perfil</h1>
+        <nav>
+            <ul>
+                <li><button onclick="window.location.href='/products'">Inicio</button></li>
+                <li><button onclick="window.location.href='/logout'">Cerrar sesión</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="profile-container">
+        <h2>Información de Perfil</h2>
+        <p>Nombre de usuario: {{ current_user.username }}</p>
+        <p>Correo electrónico: {{ current_user.email }}</p>
+    </div>
+</body>
+</html>

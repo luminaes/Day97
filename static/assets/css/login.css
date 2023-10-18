@@ -1,0 +1,59 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #118BEE;
+    color: #fff;
+    padding: 10px;
+    z-index: 100;
+}
+
+header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+
+
+.login-container {
+    background-color: #11EE74;
+    max-width: 400px; 
+    margin: 100px auto; 
+    border: 3px solid #118BEE;
+    padding: 20px;
+}
+
+.login-container h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.login-container label {
+    display: block; 
+    margin-top: 10px; 
+}
+
+.login-container input {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px; 
+}
+
+.login-container button {
+    background-color: #118BEE; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #0FEDF0; 
+}
+
+body {
+    background-color: #11EEE2;
+}
